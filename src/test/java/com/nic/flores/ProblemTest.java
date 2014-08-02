@@ -37,5 +37,11 @@ public class ProblemTest {
 	Problem4 p4 = new Problem4();
 	Assert.assertEquals("must be 9009", 9009, p4.getLargestPalindrome(99));
     }
+
+    @Test
+    public void testIntersection() {
+	Intersection intersection = new Intersection();
+	Assert.assertArrayEquals("must be [1]", new Object[]{1}, intersection.getIntersection(new int[]{1}, new int[]{1,2}));
+    }
 }
 
