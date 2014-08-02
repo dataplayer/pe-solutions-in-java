@@ -23,13 +23,13 @@ public class ProblemTest {
     @Test
     public void testProblem2() {
 	Problem2 p2 = new Problem2();
-	Assert.assertEquals("must be 44", 44, p2.getSumOfEvenFibb(10));
+	Assert.assertEquals("must be 44", 44, p2.getSumOfEvenFibb(89));
     }
 
     @Test
     public void testProblem3() {
 	Problem3 p3 = new Problem3();
-	Assert.assertEquals("must be 29", 29L, p3.getLargestPrimeFactor(13195L));
+	Assert.assertEquals("must be 29L", Long.valueOf(29), p3.getLargestPrimeFactor(13195L));
     }
 
     @Test
