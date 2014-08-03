@@ -21,6 +21,12 @@ public class ProblemTest {
     }
 
     @Test
+    public void testProblem1wStreams() {
+	Problem1wStreams p1 = new Problem1wStreams();
+	Assert.assertEquals("must be 23", 23, p1.sumOfMultiples(9));
+    }
+
+    @Test
     public void testProblem2() {
 	Problem2 p2 = new Problem2();
 	Assert.assertEquals("must be 44", 44, p2.getSumOfEvenFibb(89));
