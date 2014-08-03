@@ -8,9 +8,9 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Tests for {@link Problem1}.
+ * Tests for {@link PE Problems}.
  *
- * @author nic@flores.com (Nic Flores)
+ * @author flores314@gmail.com (Nic Flores)
  */
 public class ProblemTest {
 
