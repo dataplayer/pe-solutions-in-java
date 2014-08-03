@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.nic.flores.ProblemTest" time="0.416" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="com.nic.flores.ProblemTest" time="0.179" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/opt/jdk1.8.0_05/jre/lib/amd64"/>
@@ -57,10 +57,46 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.nic.flores.ProblemTest" name="testProblem1" time="0.003"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="BasicProblem2wStreamsFunctionalityTest" time="0.094"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="testProblem1" time="0.001"/>
   <testcase classname="com.nic.flores.ProblemTest" name="testProblem2" time="0.001"/>
-  <testcase classname="com.nic.flores.ProblemTest" name="testProblem3" time="0.007"/>
-  <testcase classname="com.nic.flores.ProblemTest" name="testProblem4" time="0.02"/>
-  <testcase classname="com.nic.flores.ProblemTest" name="testIntersection" time="0.015"/>
-  <testcase classname="com.nic.flores.ProblemTest" name="testProblem1wStreams" time="0.277"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="testProblem3" time="0.001"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="testProblem4" time="0.006"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="IntersectionWithNullsTest" time="0.014">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.nic.flores.Intersection.getIntersection(Intersection.java:27)
+	at com.nic.flores.ProblemTest.IntersectionWithNullsTest(ProblemTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</error>
+  </testcase>
+  <testcase classname="com.nic.flores.ProblemTest" name="testProblem1wStreams" time="0.005"/>
+  <testcase classname="com.nic.flores.ProblemTest" name="BasicIntersectionFunctionalityTest" time="0.001"/>
 </testsuite>

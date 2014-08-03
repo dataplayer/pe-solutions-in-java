@@ -33,6 +33,12 @@ public class ProblemTest {
     }
 
     @Test
+    public void BasicProblem2wStreamsFunctionalityTest() {
+	Problem2wStreams p2 = new Problem2wStreams();
+	Assert.assertEquals("must be 44", 44, p2.getSumOfEvenFib(10));
+    }
+
+    @Test
     public void testProblem3() {
 	Problem3 p3 = new Problem3();
 	Assert.assertEquals("must be 29L", Long.valueOf(29), p3.getLargestPrimeFactor(13195L));
