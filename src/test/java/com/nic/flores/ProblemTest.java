@@ -45,9 +45,17 @@ public class ProblemTest {
     }
 
     @Test
-    public void testIntersection() {
+    public void BasicIntersectionFunctionalityTest() {
 	Intersection intersection = new Intersection();
 	Assert.assertArrayEquals("must be [1]", new Object[]{1}, intersection.getIntersection(new int[]{1}, new int[]{1,2}));
+    }    	
+    
+    @Test
+    public void IntersectionWithNullsTest() {
+	Intersection intersection = new Intersection();
+	Assert.assertArrayEquals("must be empty", new Object[]{}, intersection.getIntersection(null, new int[]{1,2}));
+	Assert.assertArrayEquals("must be empty", new Object[]{}, intersection.getIntersection(new int[]{1}, null));
+	Assert.assertArrayEquals("must be empty", new Object[]{}, intersection.getIntersection(null, null));
     }
 }
 
