@@ -10,7 +10,7 @@ public int sumOfMultiples(int limit) {
   int i = 0;
   int result = 0;
   while ( i != limit ) {
-    if ( i % 3 == 0 | i % 5 == 0 ) {
+    if ( i % 3 == 0 || i % 5 == 0 ) {
       result += i;
     }
     i++;
