@@ -10,6 +10,19 @@ public class Intersection {
   }
 
 
+  /**
+   * <p>Compute the intersection of two sets.</p>
+   * 
+   * <p>
+   *   The running time is O(n*log(n) + m*log(m)) and in the process,
+   *   a and b will be sorted.
+   * </p>
+   * 
+   * @param a An array of ints, will be sorted in place.
+   * @param b An array of ints, will be sorted in place.
+   * 
+   * @returns An array containing the intersection of a and b.
+   */
   public Object[] getIntersection(int[] a, int[] b) {
     Vector<Integer> result = new Vector<Integer>(Math.max(a.length,b.length));
     Arrays.sort(a);
