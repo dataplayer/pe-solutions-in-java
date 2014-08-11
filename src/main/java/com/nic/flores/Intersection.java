@@ -21,9 +21,12 @@ public class Intersection {
    * @param a An array of ints, will be sorted in place.
    * @param b An array of ints, will be sorted in place.
    * 
-   * @returns An array containing the intersection of a and b.
+   * @return An array containing the intersection of a and b.
    */
   public Object[] getIntersection(int[] a, int[] b) {
+    if (a == null || b == null) {
+      return new Object[0];
+    }
     Vector<Integer> result = new Vector<Integer>(Math.max(a.length,b.length));
     Arrays.sort(a);
     Arrays.sort(b);
